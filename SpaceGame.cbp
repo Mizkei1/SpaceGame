@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpaceGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpaceGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSDL2_image -lSDL2_ttf" />
+					<Add library="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/lib/SDL2_image.lib" />
+					<Add library="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/lib/SDL2_mixer.lib" />
+					<Add library="C:/Users/Miikka/Documents/DevLibs/SDL2_ttf-2.0.15/i686-w64-mingw32/lib/libSDL2_ttf.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpaceGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="include/Gameplay.h" />
+		<Unit filename="include/InitError.h" />
+		<Unit filename="include/MainMenu.h" />
+		<Unit filename="include/Meteor.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/SDL.h" />
+		<Unit filename="include/Texture.h" />
+		<Unit filename="include/Timer.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Gameplay.cpp" />
+		<Unit filename="src/InitError.cpp" />
+		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/Meteor.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/SDL.cpp" />
+		<Unit filename="src/Texture.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
