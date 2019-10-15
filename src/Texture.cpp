@@ -38,7 +38,7 @@ void Texture::loadTextTexture(std::string text) {
         SDL_DestroyTexture(mTexture);
     }
     if (mFont == NULL) {
-        mFont = TTF_OpenFont("C:/Users/Miikka/Desktop/c++/SpaceGame/fonts/century.ttf", 28);
+        mFont = TTF_OpenFont("./fonts/century.ttf", 28);
     }
     SDL_Color color = {255, 0,0,255};
 

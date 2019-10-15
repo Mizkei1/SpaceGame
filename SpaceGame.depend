@@ -392,7 +392,7 @@
 	<vector>
 	<SDL2/SDL_ttf.h>
 
-1570714484 source:c:\users\miikka\desktop\c++\spacegame\src\gameplay.cpp
+1571142487 source:c:\users\miikka\desktop\c++\spacegame\src\gameplay.cpp
 	"Gameplay.h"
 
 1569308569 source:c:\users\miikka\desktop\c++\spacegame\src\initerror.cpp
@@ -402,7 +402,7 @@
 	"MainMenu.h"
 	"Gameplay.h"
 
-1570707089 source:c:\users\miikka\desktop\c++\spacegame\src\sdl.cpp
+1571142459 source:c:\users\miikka\desktop\c++\spacegame\src\sdl.cpp
 	"SDL.h"
 
 1570714638 source:c:\users\miikka\desktop\c++\spacegame\src\texture.cpp

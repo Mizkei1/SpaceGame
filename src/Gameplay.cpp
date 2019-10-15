@@ -3,8 +3,8 @@
 
 
 Gameplay::Gameplay(SDL_Renderer * renderer)
-: mPlayer(new Player(renderer)), mBG(new Texture("C:/Users/Miikka/Desktop/c++/SpaceGame/images/bg.png",renderer)),
-mBG2(new Texture("C:/Users/Miikka/Desktop/c++/SpaceGame/images/bg.png",renderer))
+: mPlayer(new Player(renderer)), mBG(new Texture("./images/bg.png",renderer)),
+mBG2(new Texture("./images/bg.png",renderer))
 {
     mRenderer = renderer;
 }
@@ -66,7 +66,7 @@ void Gameplay::gameplayLoop(SDL sdl) {
         spawnMeteor(timer);
         sdl.render();
         if (checkMeteorCollision() || mPlayer->checkBounds()) {
-            Texture *gameOver = new Texture("C:/Users/Miikka/Desktop/c++/SpaceGame/images/gameovar.png", mRenderer);
+            Texture *gameOver = new Texture("./images/gameovar.png", mRenderer);
             gameOver->render(0,0);
             sdl.render();
             bool replay = gameoverLoop();

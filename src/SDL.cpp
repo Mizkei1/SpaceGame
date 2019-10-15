@@ -34,9 +34,9 @@ void SDL::clearScreen() {
 }
 
 void SDL::drawMainMenu() {
-    Texture playButton("C:/Users/Miikka/Desktop/c++/SpaceGame/images/play_button.png", m_renderer);
-    Texture quitButton ("C:/Users/Miikka/Desktop/c++/SpaceGame/images/quit_button.png", m_renderer);
-    Texture bg ("C:/Users/Miikka/Desktop/c++/SpaceGame/images/mainMenuBG.png", m_renderer);
+    Texture playButton("./images/play_button.png", m_renderer);
+    Texture quitButton ("./images/quit_button.png", m_renderer);
+    Texture bg ("./images/mainMenuBG.png", m_renderer);
     SDL_SetRenderDrawColor(m_renderer, 255, 255 ,255 ,255);
     SDL_RenderClear(m_renderer);
     bg.render(0,0);
@@ -47,9 +47,9 @@ void SDL::drawMainMenu() {
 }
 
 void SDL::highlightMainMenuItem(int number) {
-    Texture playButton("C:/Users/Miikka/Desktop/c++/SpaceGame/images/play_button.png", m_renderer);
-    Texture quitButton ("C:/Users/Miikka/Desktop/c++/SpaceGame/images/quit_button.png", m_renderer);
-    Texture bg ("C:/Users/Miikka/Desktop/c++/SpaceGame/images/mainMenuBG.png", m_renderer);
+    Texture playButton("./images/play_button.png", m_renderer);
+    Texture quitButton ("./images/quit_button.png", m_renderer);
+    Texture bg ("./images/mainMenuBG.png", m_renderer);
     SDL_SetRenderDrawColor(m_renderer, 255, 255 ,255 ,255);
     SDL_RenderClear(m_renderer);
     if (number == 0) {

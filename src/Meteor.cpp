@@ -1,7 +1,7 @@
 #include "Meteor.h"
 #include <iostream>
 Meteor::Meteor(SDL_Renderer * renderer, int posX, int posY)
-: mTexture(new Texture("C:/Users/Miikka/Desktop/c++/SpaceGame/images/meteor.png", renderer))
+: mTexture(new Texture("./images/meteor.png", renderer))
 {
     mRenderer = renderer;
     mWidth = mTexture->getWidth();

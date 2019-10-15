@@ -4,7 +4,7 @@
 
 #define PI 3.14159265
 Player::Player(SDL_Renderer * renderer)
-: mTexture(new Texture("C:/Users/Miikka/Desktop/c++/SpaceGame/images/spaceship.png", renderer))
+: mTexture(new Texture("./images/spaceship.png", renderer))
 {
     mRenderer = renderer;
     mPosX = SCREEN_WIDTH / 2 - SCREEN_WIDTH / 10;
