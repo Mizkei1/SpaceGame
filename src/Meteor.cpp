@@ -1,7 +1,12 @@
 #include "Meteor.h"
 #include <iostream>
+ #ifdef NDEBUG
+  #define METEORFILE "../../images/meteor.png"
+ #else
+  #define METEORFILE "./images/meteor.png"
+ #endif
 Meteor::Meteor(SDL_Renderer * renderer, int posX, int posY)
-: mTexture(new Texture("./images/meteor.png", renderer))
+: mTexture(new Texture("../../images/meteor.png", renderer))
 {
     mRenderer = renderer;
     mWidth = mTexture->getWidth();

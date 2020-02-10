@@ -13,12 +13,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32" />
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add option="-lSDL2_image -lSDL2_ttf" />
+					<Add option="-lSDL2_image -lSDL2_mixer -lSDL2_ttf" />
 					<Add library="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/lib/SDL2_image.lib" />
-					<Add library="C:/Users/Miikka/Documents/DevLibs/i686-w64-mingw32/lib/SDL2_mixer.lib" />
+					<Add library="C:/Users/Miikka/Documents/DevLibs/SDL2_mixer-2.0.4_MINGW/i686-w64-mingw32/lib/libSDL2_mixer.dll.a" />
 					<Add library="C:/Users/Miikka/Documents/DevLibs/SDL2_ttf-2.0.15/i686-w64-mingw32/lib/libSDL2_ttf.dll.a" />
 				</Linker>
 			</Target>

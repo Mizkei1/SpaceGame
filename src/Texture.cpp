@@ -1,5 +1,12 @@
 #include "Texture.h"
 
+
+ #ifdef NDEBUG
+  #define PLAYERFILE "../../fonts/century.ttf"
+ #else
+  #define PLAYERFILE "./fonts/century.ttf"
+ #endif
+
 Texture::Texture() {
 
 }
@@ -38,7 +45,7 @@ void Texture::loadTextTexture(std::string text) {
         SDL_DestroyTexture(mTexture);
     }
     if (mFont == NULL) {
-        mFont = TTF_OpenFont("./fonts/century.ttf", 28);
+        mFont = TTF_OpenFont("../../fonts/century.ttf", 28);
     }
     SDL_Color color = {255, 0,0,255};
 

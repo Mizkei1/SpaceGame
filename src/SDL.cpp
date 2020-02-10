@@ -1,4 +1,15 @@
 #include "SDL.h"
+ #ifdef NDEBUG
+  #define PLAYBUTTON "../../images/play_button.png"
+    #define QUITBUTTON "../../images/quit_button.png"
+    #define MAINMENUBG "../../images/MainMenuBG.png"
+
+ #else
+  #define PLAYBUTTON "./images/play_button.png"
+    #define QUITBUTTON "./images/quit_button.png"
+    #define MAINMENUBG "./images/MainMenuBG.png"
+
+ #endif
 
 SDL::SDL( Uint32 flags )
 {
@@ -34,9 +45,9 @@ void SDL::clearScreen() {
 }
 
 void SDL::drawMainMenu() {
-    Texture playButton("./images/play_button.png", m_renderer);
-    Texture quitButton ("./images/quit_button.png", m_renderer);
-    Texture bg ("./images/mainMenuBG.png", m_renderer);
+    Texture playButton("../../images/play_button.png", m_renderer);
+    Texture quitButton ("../../images/quit_button.png", m_renderer);
+    Texture bg ("../../images/mainMenuBG.png", m_renderer);
     SDL_SetRenderDrawColor(m_renderer, 255, 255 ,255 ,255);
     SDL_RenderClear(m_renderer);
     bg.render(0,0);
@@ -47,9 +58,9 @@ void SDL::drawMainMenu() {
 }
 
 void SDL::highlightMainMenuItem(int number) {
-    Texture playButton("./images/play_button.png", m_renderer);
-    Texture quitButton ("./images/quit_button.png", m_renderer);
-    Texture bg ("./images/mainMenuBG.png", m_renderer);
+    Texture playButton("../../images/play_button.png", m_renderer);
+    Texture quitButton ("../../images/quit_button.png", m_renderer);
+    Texture bg ("../../images/mainMenuBG.png", m_renderer);
     SDL_SetRenderDrawColor(m_renderer, 255, 255 ,255 ,255);
     SDL_RenderClear(m_renderer);
     if (number == 0) {
